@@ -19,6 +19,8 @@ cc_binary {
     relative_install_path: "hw",
     name: "android.hardware.power@1.1-service.renesas",
     init_rc: ["android.hardware.power@1.1-service.renesas.rc"],
+    vintf_fragments: ["android.hardware.power@1.1-service.renesas.xml"],
+
     srcs: [
         "service.cc",
         "Power.cc"
